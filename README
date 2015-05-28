@@ -1,0 +1,30 @@
+ This short Linux-based code roughly illustrates what a potential attack means.
+ It is NOT intended as a 'virus'. However, one can think of it in such a way.
+ Thereby I clearly state here that I cannot assume any responsibility upon what any person can do with this code once it is public
+(open-source).
+
+ (C) VladG, 2015 - All rights reserved.
+====
+
+===========
+= Purpose =
+===========
+
+ It was designed just to support the statements made in a Diploma project dealing with security over Internet.
+ The project has been held at Electronics and Information Technology faculty within Politehnica University in Bucharest, in July 2015.
+ The project was guided by two tutors: me and a colleague of mine from the Economics Department.
+ ====
+
+===========
+= Details =
+===========
+
+ What this code mainly does, in this order:
+ - identifies the current (default) shell;
+ - identifies the current logged user;
+ - uses 'sed' binary (text processing tool) in order to demonstrate that it can do 'harm' over one/several file(s).
+
+ The code doesn't actually modifies anything among the current user's personal files. It only shows that such a thing is perfectly
+possible.
+ The 'sed' command used here searches for a specific string that relies within the SSH keys one stores in his home folder. Once this
+string is found it is replaced with another one, thus showing that a potential attack can happen anytime.
